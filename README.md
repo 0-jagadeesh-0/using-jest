@@ -41,7 +41,7 @@ Now create file sum.js in that folder where we are going to write the test cases
 
 There you can describe your test cases and check the sum function.
 
-<code>
+```
 
 const sum = require('../sum');
 
@@ -92,7 +92,7 @@ describe('finding sum of two numbers', () => {
     });
 });
 
-</code>
+```
 
 **Step-3**
 
@@ -101,4 +101,6 @@ Now you can test the sum function by running the below command
 `
 npm run test
 `
+
+
 ![Test Cases](https://github.com/0-jagadeesh-0/learn-jest/blob/master/assets/sum-test-cases.png)
