@@ -22,22 +22,27 @@ This repository will help you to learn how to write test cases in javascript.
 
 Create a file sum.js
 
-`
+<code>
+
 const sum = (a,b)=>{
     return a+b;
 }
-
 module.exports = sum;
-`
+
+</code>
 
 **Step-2**
 
 Now you need to test the above sum function by passing some test cases.
+
 For that you need to create a folder named __tests__ 
+
 Now create file sum.js in that folder where we are going to write the test cases.
+
 There you can describe your test cases and check the sum function.
 
-`
+<code>
+
 const sum = require('../sum');
 
 describe('finding sum of two numbers', () => {
@@ -86,7 +91,8 @@ describe('finding sum of two numbers', () => {
 
     });
 });
-`
+
+</code>
 
 **Step-3**
 
@@ -95,4 +101,4 @@ Now you can test the sum function by running the below command
 `
 npm run test
 `
-
+![Test Cases](https://github.com/0-jagadeesh-0/learn-jest/blob/master/assets/sum-test-cases.png)
