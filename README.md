@@ -10,11 +10,11 @@ npm install jest --save-dev
 
 Now you have to add jest to test in scripts in package.json
 
-`
+```
 "script":{
     "test":"jest"
 }
-`
+```
 
 This repository will help you to learn how to write test cases in javascript.
 
@@ -22,14 +22,14 @@ This repository will help you to learn how to write test cases in javascript.
 
 Create a file sum.js
 
-<code>
+```
 
 const sum = (a,b)=>{
     return a+b;
 }
 module.exports = sum;
 
-</code>
+```
 
 **Step-2**
 
