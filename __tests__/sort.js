@@ -24,10 +24,10 @@ describe('Sorting the given array', () => {
             expected: [1, 2, 3, 7, 8, 9]
         }
     ];
-    testCases.forEach(test => {
-        it(`should correctly sort the given array ${test.list} to ${test.expected}`, () => {
-            const output = sort(test.list);
-            expect(output).toStrictEqual(test.expected);
+    testCases.forEach(testIdx => {
+        test(`should correctly sort the given array ${testIdx.list} to ${testIdx.expected}`, () => {
+            const output = sort(testIdx.list);
+            expect(output).toStrictEqual(testIdx.expected);
         });
     });
 });

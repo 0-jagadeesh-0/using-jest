@@ -23,12 +23,10 @@ This repository will help you to learn how to write test cases in javascript.
 Create a file sum.js
 
 ```
-
 const sum = (a,b)=>{
     return a+b;
 }
 module.exports = sum;
-
 ```
 
 **Step-2**
@@ -42,7 +40,6 @@ Now create file sum.js in that folder where we are going to write the test cases
 There you can describe your test cases and check the sum function.
 
 ```
-
 const sum = require('../sum');
 
 describe('finding sum of two numbers', () => {
@@ -83,15 +80,14 @@ describe('finding sum of two numbers', () => {
             expected: 103
         }
     ];
-    testCases.forEach(test => {
-        it(`should correctly find the sum of ${test.a} and ${test.b} which is ${test.expected}`, () => {
-            const output = sum(test.a, test.b);
-            expect(output).toEqual(test.expected);
+     testCases.forEach(testIdx => {
+        test(`should correctly find the sum of ${testIdx.a} and ${testIdx.b} which is ${testIdx.expected}`, () => {
+            const output = sum(testIdx.a, testIdx.b);
+            expect(output).toEqual(testIdx.expected);
         });
 
     });
 });
-
 ```
 
 **Step-3**

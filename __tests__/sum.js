@@ -38,10 +38,10 @@ describe('finding sum of two numbers', () => {
             expected: 103
         }
     ];
-    testCases.forEach(test => {
-        it(`should correctly find the sum of ${test.a} and ${test.b} which is ${test.expected}`, () => {
-            const output = sum(test.a, test.b);
-            expect(output).toEqual(test.expected);
+    testCases.forEach(testIdx => {
+        test(`should correctly find the sum of ${testIdx.a} and ${testIdx.b} which is ${testIdx.expected}`, () => {
+            const output = sum(testIdx.a, testIdx.b);
+            expect(output).toEqual(testIdx.expected);
         });
 
     });
