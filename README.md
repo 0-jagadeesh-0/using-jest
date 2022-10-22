@@ -1,6 +1,6 @@
-# Jest
+# How to use Jest
 
-- Jest is a Javascript Testing Framework.
+Jest is a Javascript Testing Framework.
 
 **Installing Jest**
 
@@ -8,7 +8,7 @@
 npm install jest --save-dev
 `
 
-Now you have to add jest to test in scripts in package.json
+Now you have to add jest to test in scripts in `package.json`
 
 ```
 "script":{
@@ -20,7 +20,7 @@ This repository will help you to learn how to write test cases in javascript.
 
 **Step-1**
 
-Create a file sum.js
+Create a file `sum.js`
 
 ```
 const sum = (a,b)=>{
@@ -33,7 +33,7 @@ module.exports = sum;
 
 Now you need to test the above sum function by passing some test cases.
 
-For that you need to create a folder named __tests__ 
+For that you need to create a folder named `__tests__` 
 
 Now create file sum.js in that folder where we are going to write the test cases.
 
